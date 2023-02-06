@@ -86,6 +86,55 @@ body {
   display: block;
 }
 
+.heading-secondary {
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: #0000;
+  letter-spacing: .2rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+  transition: all .2s;
+  display: inline-block;
+}
+
+.heading-secondary:hover {
+  text-shadow: .5rem 1rem 2rem #0003;
+  transform: skewY(2deg)skewX(15deg)scale(1.1);
+}
+
+.heading-tertiary {
+  text-transform: uppercase;
+  text-align: start;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.paragraph {
+  text-align: start;
+  font-size: 1.6rem;
+}
+
+.paragraph:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   border-radius: 10rem;
@@ -138,6 +187,68 @@ body {
   animation: .5s ease-out .75s backwards moveInBottom;
 }
 
+.btn-text:link, .btn-text:visited {
+  color: #55c57a;
+  border-bottom: 1px solid #55c57a;
+  padding: 3px;
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: all .2s;
+  display: inline-block;
+}
+
+.btn-text:hover {
+  color: #fff;
+  background-color: #55c57a;
+  transform: translateY(-2px);
+  box-shadow: 0 1rem 2rem #00000026;
+}
+
+.btn-text:active {
+  transform: translateY(0);
+  box-shadow: 0 .5rem 1rem #00000026;
+}
+
+.composition {
+  position: relative;
+}
+
+.composition__photo {
+  width: 55%;
+  z-index: 10;
+  outline-offset: 2rem;
+  transition: all .2s;
+  position: absolute;
+  box-shadow: 0 1.5rem 4rem #0006;
+}
+
+.composition__photo--p1 {
+  top: -2rem;
+  left: 0;
+}
+
+.composition__photo--p2 {
+  top: 2rem;
+  right: 0;
+}
+
+.composition__photo--p3 {
+  top: 10rem;
+  left: 20%;
+}
+
+.composition__photo:hover {
+  z-index: 20;
+  border-radius: 0;
+  outline: 1.5rem solid #55c57a;
+  transform: scale(1.05)translateY(-.5rem);
+  box-shadow: 0 2.5rem 4rem #00000080;
+}
+
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(.95);
+}
+
 .header {
   height: 95vh;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
@@ -167,7 +278,6 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: #eee;
   margin: 0 auto;
 }
 
@@ -183,7 +293,6 @@ body {
 
 .row [class^="col-"] {
   float: left;
-  background-color: #ff4500;
 }
 
 .row [class^="col-"]:not(:last-child) {
@@ -212,6 +321,12 @@ body {
 
 .row .col-3-of-4 {
   width: calc(75% - 1.5rem);
+}
+
+.section-about {
+  background-color: #f7f7f7;
+  margin-top: -20vh;
+  padding: 25rem 0;
 }
 
 /*# sourceMappingURL=index.b10d73a7.css.map */

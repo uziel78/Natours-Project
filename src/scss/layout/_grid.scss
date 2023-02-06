@@ -1,6 +1,5 @@
 .row {
   max-width: $grid-width;
-  background-color: #eee;
   margin: 0 auto;
 
   //select everything BUT the last-child (row in this case)
@@ -12,7 +11,6 @@
 
   //attribute selector used to target common selector that starts with class, or in this case a partial selector
   [class^='col-'] {
-    background-color: orangered;
     float: left;
 
     &:not(:last-child) {
