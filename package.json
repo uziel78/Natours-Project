@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "description": "This is a course project from Udemy that spans several projects in total:",
   "source": "./src/index.html",
+  "targets": {
+    "default": {
+      "distDir": "./dist"
+    }
+  },
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/*.html"
+    "build": "parcel build"
   },
   "repository": {
     "type": "git",
