@@ -1,7 +1,7 @@
 /* header image with gradient overlay and clip-path */
 
 .header {
-  height: 95vh;
+  height: 85vh;
 
   background-image: linear-gradient(
       to right bottom,
@@ -28,7 +28,7 @@
     position: absolute;
     top: 40vh;
     left: 50vw;
-    transform: translate(-50%, -50%);
+    transform: translate(-60%, -50%);
     text-align: center;
   }
 }
