@@ -81,6 +81,11 @@ body {
   }
 }
 
+::selection {
+  color: #fff;
+  background-color: #55c57a;
+}
+
 body {
   color: #777;
   font-family: Lato, sans-serif;

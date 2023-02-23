@@ -35,3 +35,9 @@ body {
     padding: 0rem;
   }
 }
+
+// change how selected text ets is marked on page
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}

@@ -189,6 +189,7 @@
   }
 
   //@include respond(tab-port) {
+  //written without mixin to include multimple condition, one of which is how to work on non-hover devices
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     height: auto;
     border-radius: 3px;
