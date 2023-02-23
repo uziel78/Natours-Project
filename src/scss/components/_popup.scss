@@ -10,6 +10,7 @@
   visibility: hidden;
   transition: all 0.3s;
 
+  // IF X or Y is supported by browser, then apply Z. (graceful degradation)
   @supports (-webkit-backdrop-filter: blur(10px)) or
     (backdrop-filter: blur(10px)) {
     -webkit-backdrop-filter: blur(10px);
@@ -34,6 +35,15 @@
   &__left {
     width: 33.333333%;
     display: table-cell;
+
+    @include respond(tab-port) {
+      background-color: $color-grey-light-2;
+    }
+
+    @include respond(phone) {
+      display: none;
+      width: 0;
+    }
   }
 
   &__right {
@@ -41,6 +51,10 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respond(phone) {
+      width: 100%;
+    }
   }
 
   &__img {
