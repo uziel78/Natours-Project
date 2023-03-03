@@ -1,6 +1,12 @@
 ## About
 
 This is a course project from Udemy:
+original course: https://www.udemy.com/course/advanced-css-and-sass/ by Jonas Schmedtmann
+
+https://natours.netlify.app/ (hosted her by original course creator for a quick reference/comparison)
+
+
+"npm run dev" to view project on development server
 
 Natours Project
 
@@ -19,6 +25,5 @@ Some key features include:
 - custom radio-buttons
 - various cool hover effects
 
-original course: https://www.udemy.com/course/advanced-css-and-sass/ by Jonas Schmedtmann
 
-"npm run dev" to view project
+
